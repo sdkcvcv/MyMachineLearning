@@ -14,20 +14,11 @@ from ML_Pool2d import Pool2d
 class CNN:
     def __init__(self):
         self.layers = []
-        #self.info_df = {} # Зачем??
-        #self.column = ['Lname','Input Shape', 'Output Shape', 'Activation', 'Bias'] # Зачем??
         self.parameters = []
-        #self.optimizer = '' # задается в другом месте
-        #self.loss = 'mse' # задается в другом месте
-        #self.lr = 0.01 # задается в другом месте
-        #self.mr = 0.001 # задается в другом месте
-        #self.metrics = [] # задается в другом месте
         self.av_optimizers = ["sgd", "iterative", "momentum", "rmsprop", "adagrad", "adam", "adamax", "adadelta"]
         self.av_metrics = ['mse','accuracy','cse']
         self.av_loss = ['mse','cse']
         self.iscompiled = False
-        #self.model_dict = None # Зачем?
-        #self.out = [] # Зачем??
         self.eps = 1e-15
         self.train_loss = {}
         self.val_loss = {}
