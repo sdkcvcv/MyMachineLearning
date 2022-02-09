@@ -1,3 +1,3 @@
 # MyMachineLearning
 
-This is my own machine learning system
+This is my machine learning system
